@@ -1,0 +1,130 @@
+{
+	"info": {
+		"_postman_id": "7525b21f-d673-4560-b023-66d33c8b691a",
+		"name": "ApiRuleta",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Abrir Ruletas",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:51886/api/Ruleta/abrir/1",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "51886",
+					"path": [
+						"api",
+						"Ruleta",
+						"abrir",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Crear Ruletas",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "",
+						"value": "",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "http://localhost:51886/api/Ruleta/crear",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "51886",
+					"path": [
+						"api",
+						"Ruleta",
+						"crear"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Apostar",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "jugador",
+						"value": "Camilo",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "http://localhost:51886/api/Ruleta/apostar/rojo&300&1",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "51886",
+					"path": [
+						"api",
+						"Ruleta",
+						"apostar",
+						"rojo&300&1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Cerrar Ruleta",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:51886/api/Ruleta/cerrar/1",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "51886",
+					"path": [
+						"api",
+						"Ruleta",
+						"cerrar",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Lista de Ruletas",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:51886/api/Ruleta/lista",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "51886",
+					"path": [
+						"api",
+						"Ruleta",
+						"lista"
+					]
+				}
+			},
+			"response": []
+		}
+	],
+	"protocolProfileBehavior": {}
+}
